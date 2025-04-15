@@ -98,7 +98,7 @@ public class Exercicio_28 {
                     + elementome);
         }
 
-        int maiorvalor = Integer.MIN_VALUE;
+        int maiorvalor = A[0][0];
         String valorma = "";
 
         for (i = 0; i < 3; i++) {
@@ -112,18 +112,21 @@ public class Exercicio_28 {
 
         JOptionPane.showMessageDialog(null, "O maior valor da matriz é: " + valorma);
 
-        int menorvalor = Integer.MAX_VALUE;
+        int menorvalor = A[0][0];
         String valorme = "";
         for (i = 0; i < 3; i++) {
             for (j = 0; j < 3; j++) {
                 if (A[i][j] < menorvalor) {
                     menorvalor = A[i][j];
                     valorme = "A[" + i + "][" + j + "] = " + A[i][j] + "\n";
+                } else {
+                    valorme = "A[" + 0 + "][" + 0 + "] = " + A[0][0] + "\n";
                 }
             }
         }
-        JOptionPane.showMessageDialog(null, "O menor valor da matriz é: " + valorme);
-
+  
+            JOptionPane.showMessageDialog(null, "O menor valor da matriz é: " + valorme);
+        
         int diagonalp = 0;
         for (i = 0; i < 3; i++) {
             diagonalp += A[i][i];
@@ -131,9 +134,9 @@ public class Exercicio_28 {
         JOptionPane.showMessageDialog(null, "Diagonal princípal é: " + diagonalp);
 
         int diagonals = 0;
-        for (i = 0, j = 2; i > 3; i++, j--) {
+        for (i = 0, j = 2; i > 3 && j < 0; i++, j--) {
             diagonals += A[i][j];
         }
-        JOptionPane.showMessageDialog(null, "Diagonal secindaria é: " + diagonals);
+        JOptionPane.showMessageDialog(null, "Diagonal secundaria é: " + diagonals);
     }
 }
