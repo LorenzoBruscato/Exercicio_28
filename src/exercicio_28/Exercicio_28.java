@@ -100,35 +100,41 @@ public class Exercicio_28 {
 
         int maiorvalor = A[0][0];
         String valorma = "";
+        int linhama = 0;
+        int colunama = 0;
 
-        for (i = 1; i < 3; i++) {
-            for (j = 0; j < 3; j++) {
+        for (i = 0; i < 3; i++) {
+            for (j = 1; j < 3; j++) {
                 if (A[i][j] > maiorvalor) {
                     maiorvalor = A[i][j];
-                    valorma = "A[" + i + "][" + j + "] = " + A[i][j] + "\n";
-                }else{
-                  valorma = "A[" + 0 + "][" + 0 + "] = " + A[0][0] + "\n";
+                    linhama = i;
+                    colunama = j;
                 }
             }
         }
 
-        JOptionPane.showMessageDialog(null, "O maior valor da matriz é: " + valorma);
+        JOptionPane.showMessageDialog(null,
+                "Maior valor da matriz: " + maiorvalor
+                + "\nPosição: A[" + linhama + "][" + colunama + "]");
 
         int menorvalor = A[0][0];
-        String valorme = "";
-        for (i = 1; i < 3; i++) {
+        int linhame = 0;
+        int coluname = 0;
+
+        for (i = 0; i < 3; i++) {
             for (j = 0; j < 3; j++) {
                 if (A[i][j] < menorvalor) {
                     menorvalor = A[i][j];
-                    valorme = "A[" + i + "][" + j + "] = " + A[i][j] + "\n";
-                } else {
-                    valorme = "A[" + 0 + "][" + 0 + "] = " + A[0][0] + "\n";
+                    linhame = i;
+                    coluname = j;
                 }
             }
         }
-  
-            JOptionPane.showMessageDialog(null, "O menor valor da matriz é: " + valorme);
-        
+
+        JOptionPane.showMessageDialog(null,
+                "Menor valor da matriz: " + menorvalor
+                + "\nPosição: A[" + linhame + "][" + coluname + "]");
+
         int diagonalp = 0;
         for (i = 0; i < 3; i++) {
             diagonalp += A[i][i];
