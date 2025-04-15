@@ -1,11 +1,23 @@
-eia uma matriz 3x3. Depois:
-A) Some a 1ª coluna;
-B) Some cada coluna;
-C) Multiplique a 1ª linha;
-D) Some todos os elementos;
-E) Calcule a média;
-F) Mostre os maiores que a média;
-G) Maior valor e posição;
-H) Menor valor e posição;
-I) Soma da diagonal principal;
-J) Soma da diagonal secundária.
+## 📘 Exercício – Matriz 3x3 em Java
+
+Este programa em Java realiza diversas operações com uma matriz 3x3 de números inteiros, utilizando `JOptionPane` para entrada e saída de dados.
+
+### ✅ Funcionalidades:
+
+- 🔹 **A:** Soma dos elementos da primeira coluna  
+- 🔹 **B:** Soma dos elementos de cada coluna  
+- 🔹 **C:** Produto dos elementos da primeira linha  
+- 🔹 **D:** Soma de todos os elementos da matriz  
+- 🔹 **E:** Cálculo da média dos elementos  
+- 🔹 **F:** Exibição dos elementos maiores que a média  
+- 🔹 **G:** Maior elemento da matriz e sua posição  
+- 🔹 **H:** Menor elemento da matriz e sua posição  
+- 🔹 **I:** Soma da diagonal principal  
+- 🔹 **J:** Soma da diagonal secundária
+
+### 💻 Linguagem
+- Java (com uso de `JOptionPane`)
+
+### 📎 Observações
+- O programa é ideal para reforçar lógica de programação com matrizes.
+- Todos os resultados são exibidos em janelas de diálogo.
