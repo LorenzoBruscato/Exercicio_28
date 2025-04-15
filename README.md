@@ -17,7 +17,3 @@ Este programa em Java realiza diversas operações com uma matriz 3x3 de número
 
 ### 💻 Linguagem
 - Java (com uso de `JOptionPane`)
-
-### 📎 Observações
-- O programa é ideal para reforçar lógica de programação com matrizes.
-- Todos os resultados são exibidos em janelas de diálogo.
