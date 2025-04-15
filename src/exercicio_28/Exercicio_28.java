@@ -101,11 +101,13 @@ public class Exercicio_28 {
         int maiorvalor = A[0][0];
         String valorma = "";
 
-        for (i = 0; i < 3; i++) {
+        for (i = 1; i < 3; i++) {
             for (j = 0; j < 3; j++) {
                 if (A[i][j] > maiorvalor) {
                     maiorvalor = A[i][j];
                     valorma = "A[" + i + "][" + j + "] = " + A[i][j] + "\n";
+                }else{
+                  valorma = "A[" + 0 + "][" + 0 + "] = " + A[0][0] + "\n";
                 }
             }
         }
@@ -114,7 +116,7 @@ public class Exercicio_28 {
 
         int menorvalor = A[0][0];
         String valorme = "";
-        for (i = 0; i < 3; i++) {
+        for (i = 1; i < 3; i++) {
             for (j = 0; j < 3; j++) {
                 if (A[i][j] < menorvalor) {
                     menorvalor = A[i][j];
@@ -134,7 +136,7 @@ public class Exercicio_28 {
         JOptionPane.showMessageDialog(null, "Diagonal princípal é: " + diagonalp);
 
         int diagonals = 0;
-        for (i = 0, j = 2; i > 3 && j < 0; i++, j--) {
+        for (i = 0, j = 2; i < 3 && j >= 0; i++, j--) {
             diagonals += A[i][j];
         }
         JOptionPane.showMessageDialog(null, "Diagonal secundaria é: " + diagonals);
